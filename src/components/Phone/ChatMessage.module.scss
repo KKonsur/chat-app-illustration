@@ -1,0 +1,42 @@
+@import '../../variables.scss';
+
+.chat-message {
+   font-size: 0.65rem;
+   display: flex;
+   margin-bottom: 0.55rem;
+   max-width: 75%;
+   padding: 0.65rem;
+   line-height: 1rem;
+
+   &--sent {
+      color: $right-chat-color;
+      float: right;
+      background-color: #fff;
+      box-shadow: 2px 7px 34px -24px rgba(66, 68, 90, 1);
+      border-radius: 15px 15px 3px 15px;
+   }
+
+   &--received {
+      background-color: #ede5f2;
+      color: $left-chat-color;
+      clear: both;
+      border-radius: 15px 15px 15px 3px;
+   }
+
+   &--images {
+      background-color: unset;
+      box-shadow: unset;
+      border-radius: unset;
+      padding: 0;
+   }
+
+   img {
+      width: 40%;
+      margin-right: 10px;
+      border-radius: 10px;
+
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}

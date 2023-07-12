@@ -1,0 +1,31 @@
+@import '../../variables.scss';
+
+.price-message {
+   display: flex;
+   align-items: center;
+   font-size: 0.65rem;
+   display: flex;
+   margin-bottom: 0.3rem;
+   width: 75%;
+   padding: 0.65rem;
+   line-height: 1rem;
+   clear: both;
+   border-radius: 15px 15px 15px 3px;
+   color: #fff;
+   background: linear-gradient(to right, $light-magenta, $light-violet);
+   position: relative;
+
+   &__price {
+      position: absolute;
+      right: 0.65rem;
+      font-size: 1rem;
+      font-weight: 700;
+   }
+}
+
+.circle {
+   padding: 7px;
+   border-radius: 50%;
+   border: 2px solid $radio-button-outline;
+   margin-right: 0.6rem;
+}

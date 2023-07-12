@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: clamp(2rem, 5vw, 5rem);
+
+   @media (max-width:840px) {
+      flex-direction: column;
+   }
+}
+
+.text-container {
+   width: clamp(200px, 50vw, 450px);
+
+   @media (max-width: 840px) {
+      width: 75vw;
+      text-align: center;
+   }
+}
+
+.heading {
+   color: $main-heading-color;
+   margin-bottom: 1rem;
+   font-weight: 500;
+}
+
+.paragraph {
+   color: $paragraph-color;
+   line-height: 1.4rem;
+}
